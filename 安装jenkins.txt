@@ -1,0 +1,17 @@
+1.关闭防火墙
+2.更新yum
+3.下载java
+4. 下载解压tomcat并启动
+5.将jenkins.war移入tomca/webapps目录下
+
+
+
+ 
+错误1: 启动jenkins长时间等待.
+ 
+将hudson.model.UpdateCenter.xml文件内的网址修改为国内的http://mirror.xmission.com/jenkins/updates/update-center.json
+
+
+错误2: 安装过程中出现一个错误： No such plugin: cloudbees-folder
+
+下载cloudbees-folder.hpi放在./tomcat/webapps/jenkins/WEB-INF/detached-plugins目录下重启tomcat即可
